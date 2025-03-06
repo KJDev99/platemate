@@ -6,7 +6,1024 @@
     <title>PlateMale</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    Start
+  <body class="bg-[#FFEAE9]">
+    <!-- HEADER -->
+
+    <header>
+      <div class="flex gap-[10px] justify-center py-1.5 items-center">
+        <img src="./imgs/icons/flagtop.svg" alt="" />
+        <p class="text-xs">Мы находимся во Вьетнаме, Да Нанг!</p>
+      </div>
+
+      <!-- NAVBAR -->
+
+      <nav
+        class="max-w-[1160px] mx-auto flex justify-between items-center max-md:px-4 my-4"
+      >
+        <ul
+          class="flex flex-col space-y-2 font-medium md:flex-row md:space-y-0 md:space-x-6"
+        >
+          <li class="border-b-2 border-[#FE554A] py-2 text-sm">
+            <a href="#" class="mx-2">Как заказать?</a>
+          </li>
+          <li class="py-2 text-sm"><a href="#" class="mx-2">Наборы</a></li>
+          <li class="py-2 text-sm"><a href="#" class="mx-2">Карта</a></li>
+          <li class="py-2 text-sm"><a href="#" class="mx-2">FAQ</a></li>
+        </ul>
+
+        <div class="flex items-center text-xl font-bold">
+          <img src="./imgs/icons/Logo.svg" alt="Logo" />
+        </div>
+
+        <div
+          class="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-6"
+        >
+          <select name="" id="" class="font-medium border-none outline-none">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+          </select>
+          <button class="flex gap-1.5 font-medium">
+            <img src="./imgs/icons/Telegram.svg" alt="" />
+            <span>Поддержка</span>
+          </button>
+          <button class="text-[#1D1D1D] font-semibold">Сделать заказ</button>
+        </div>
+      </nav>
+
+      <!-- HEADER CONTENT -->
+
+      <div
+        class="max-w-[1160px] mx-auto flex flex-col lg:flex-row justify-between max-md:px-4"
+      >
+        <div class="flex flex-col text-center lg:w-3/5 lg:text-left">
+          <h1
+            class="text-[32px] sm:text-[40px] md:text-[48px] font-bold lg:mt-[100px] mb-[-16px]"
+          >
+            Месяц готовой еды
+          </h1>
+          <span class="text-[32px] sm:text-[40px] md:text-[48px] font-semibold">
+            и бесплатная замена блюд
+          </span>
+          <p
+            class="font-medium text-[18px] sm:text-[20px] md:text-[24px] mt-6 md:mt-8 mb-[36px] md:mb-[52px]"
+          >
+            от
+            <span class="text-[24px] sm:text-[28px] md:text-[32px] font-bold"
+              >300.000.000</span
+            >
+            донг
+          </p>
+          <button
+            class="text-semibold py-3 sm:py-4 px-6 sm:px-8 bg-[#FE554A] rounded-[12px] sm:rounded-[16px] text-white w-max mx-auto lg:mx-0 cursor-pointer lg:mb-[100px]"
+          >
+            Заказать еду на месяц
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center mt-6 lg:w-2/5 lg:mt-0"
+        >
+          <img
+            src="./imgs/hero.png"
+            alt="Home Page Image"
+            class="object-cover rounded-[12px] sm:rounded-[16px] w-[80%] sm:w-[60%] md:w-full max-w-[400px] md:max-w-none"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section class="max-w-[1160px] mx-auto max-md:px-4 mb-[50px]">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <div class="flex flex-col items-center">
+            <img src="./imgs/icons/secone-1.svg" alt="" class="mb-4" />
+            <p class="font-bold text-[24px]">
+              Бесплатная замена <span class="font-medium">блюд</span>
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./imgs/icons/secone-2.svg" alt="" class="mb-4" />
+            <p class="font-bold text-[24px]">
+              140 блюд <span class="font-medium">в меню</span>
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="./imgs/icons/secone-3.svg" alt="" class="mb-4" />
+            <p class="font-bold text-[24px]">
+              от 230 000 <span class="font-medium">₫ в день</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+        <h2 class="mb-[50px] text-center text-[36px] font-medium">
+          Как заказать?
+        </h2>
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="flex flex-col items-center px-[30px] py-10 bg-[#FFF6F633] rounded-[24px]"
+          >
+            <img
+              src="./imgs/icons/sectwo-1.svg"
+              alt=""
+              class="w-[52px] h-[52px]"
+            />
+            <h4 class="text-[36px] mt-6 font-medium">01</h4>
+            <h4 class="text-xl mb-6 mt-[52px] font-medium">Создайте заказ</h4>
+            <p class="font-medium text-center leading-[17px]">
+              Выберите удобный набор и количество дней
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-[30px] py-10 bg-[#FFF6F633] rounded-[24px]"
+          >
+            <img
+              src="./imgs/icons/sectwo-2.svg"
+              alt=""
+              class="w-[52px] h-[52px]"
+            />
+            <h4 class="text-[36px] mt-6 font-medium">02</h4>
+            <h4 class="text-xl mb-6 mt-[52px] font-medium">Оставьте заявку</h4>
+            <p class="font-medium text-center leading-[17px]">
+              Выберите удобный способ связи с вами
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-[30px] py-10 bg-[#FFF6F633] rounded-[24px]"
+          >
+            <img
+              src="./imgs/icons/sectwo-3.svg"
+              alt=""
+              class="w-[52px] h-[52px]"
+            />
+            <h4 class="text-[36px] mt-6 font-medium">03</h4>
+            <h4 class="text-xl mb-6 mt-[52px] font-medium">
+              Подтвердите заказ
+            </h4>
+            <p class="font-medium text-center leading-[17px]">
+              Мы с вами свяжемся чтобы определить дату доставки, оплату и
+              временной диапазон для доставки
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center px-[30px] py-10 bg-[#FFF6F633] rounded-[24px]"
+          >
+            <img
+              src="./imgs/icons/sectwo-4.svg"
+              alt=""
+              class="w-[52px] h-[52px]"
+            />
+            <h4 class="text-[36px] mt-6 font-medium">04</h4>
+            <h4 class="text-xl mb-6 mt-[52px] font-medium">Наслаждайтесь❤️</h4>
+            <p class="font-medium text-center leading-[17px]">
+              Еда приходит сразу на два дня, останется её только разогреть.
+            </p>
+            <button
+              class="mt-6 rounded-[16px] bg-[#FE554A] text-[#FFFFFF] font-semibold py-3 px-5"
+            >
+              Сделать заказ
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+        <h2 class="text-center text-[36px] font-medium">Наборы</h2>
+        <p class="mb-[50px] text-center">
+          Выберите один из наборов, чтобы продолжить
+        </p>
+
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <label
+            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition"
+          >
+            <input type="radio" name="set" class="hidden peer" />
+            <div
+              class="absolute top-10 right-[30px] w-8 h-8 border border-[#C9C9C9] rounded-[10px] block peer-checked:hidden transition"
+            ></div>
+            <div
+              class="absolute top-10 right-[30px] w-8 h-8 flex items-center justify-center rounded-[10px] hidden peer-checked:flex peer-checked:bg-[#FE554A] peer-checked:border-[#FE554A] transition"
+            >
+              <img
+                src="./imgs/icons/check.svg"
+                alt=""
+                class="peer-checked:hidden"
+              />
+            </div>
+
+            <h3 class="text-2xl font-semibold">Стартовый</h3>
+            <p class="my-3 text-sm font-bold mx-[30px]">3 блюда</p>
+            <p class="text-sm leading-[14px] mx-[30px]">
+              Идеально для классического режима питания
+            </p>
+            <p class="text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
+              от 460.000 đ
+            </p>
+            <img
+              src="./imgs/food1.png"
+              alt="Стартовый"
+              class="mt-4 rounded-lg"
+            />
+          </label>
+
+          <label
+            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition"
+          >
+            <input type="radio" name="set" class="hidden peer" />
+            <div
+              class="absolute top-10 right-[30px] w-8 h-8 border border-[#C9C9C9] rounded-[10px] block peer-checked:hidden transition"
+            ></div>
+            <div
+              class="absolute top-10 right-[30px] w-8 h-8 flex items-center justify-center rounded-[10px] hidden peer-checked:flex peer-checked:bg-[#FE554A] peer-checked:border-[#FE554A] transition"
+            >
+              <img
+                src="./imgs/icons/check.svg"
+                alt=""
+                class="peer-checked:hidden"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mx-[30px]">Базовый+</h3>
+            <p class="my-3 text-sm font-bold mx-[30px]">3 блюда + напиток</p>
+            <p class="text-sm leading-[14px] mx-[30px]">
+              Дополнительное преимущество освежающего напитка
+            </p>
+            <p class="text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
+              от 490.000 đ
+            </p>
+            <img
+              src="./imgs/food1.png"
+              alt="Базовый+"
+              class="mt-4 rounded-lg"
+            />
+          </label>
+
+          <label
+            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition"
+          >
+            <input type="radio" name="set" class="hidden peer" />
+            <div
+              class="absolute top-10 right-[30px] w-8 h-8 border border-[#C9C9C9] rounded-[10px] block peer-checked:hidden transition"
+            ></div>
+            <div
+              class="absolute top-10 right-[30px] w-8 h-8 flex items-center justify-center rounded-[10px] hidden peer-checked:flex peer-checked:bg-[#FE554A] peer-checked:border-[#FE554A] transition"
+            >
+              <img
+                src="./imgs/icons/check.svg"
+                alt=""
+                class="peer-checked:hidden"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mx-[30px]">Комфорт</h3>
+            <p class="my-3 text-sm font-bold mx-[30px]">4 блюда + напиток</p>
+            <p class="text-sm leading-[14px] mx-[30px]">
+              Оптимально для активного образа жизни
+            </p>
+            <p class="text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
+              от 575.000 đ
+            </p>
+            <img src="./imgs/food3.png" alt="Комфорт" class="mt-4 rounded-lg" />
+          </label>
+
+          <label
+            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition"
+          >
+            <input type="radio" name="set" class="hidden peer" />
+            <div
+              class="absolute top-10 right-[30px] w-8 h-8 border border-[#C9C9C9] rounded-[10px] block peer-checked:hidden transition"
+            ></div>
+            <div
+              class="absolute top-10 right-[30px] w-8 h-8 flex items-center justify-center rounded-[10px] hidden peer-checked:flex peer-checked:bg-[#FE554A] peer-checked:border-[#FE554A] transition"
+            >
+              <img
+                src="./imgs/icons/check.svg"
+                alt=""
+                class="peer-checked:hidden"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mx-[30px]">Премиум</h3>
+            <p class="my-3 text-sm font-bold mx-[30px]">5 блюд + напиток</p>
+            <p class="text-sm leading-[14px] mx-[30px]">Больше вкусных блюд</p>
+            <p class="text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
+              от 660.000 đ
+            </p>
+            <img src="./imgs/food4.png" alt="Премиум" class="mt-4 rounded-lg" />
+          </label>
+        </div>
+      </section>
+
+      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[30px]">
+        <div class="flex flex-wrap justify-between">
+          <div class="max-w-[760px] max-md:w-full">
+            <h2 class="mb-6 text-2xl font-medium">Пример меню</h2>
+            <div
+              class="flex justify-between mb-8 gap-1.5 max-md:overflow-x-auto"
+            >
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-10 text-[17px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Пн
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-10 text-[17px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Вт
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-10 text-[17px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Ср
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-10 text-[17px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Чт
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-10 text-[17px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Пт
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-10 text-[17px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Сб
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-10 text-[17px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Вс
+              </button>
+            </div>
+            <div class="flex items-center justify-between mb-8">
+              <h3 class="font-medium text-[32px]">3 блюда, 3 приема</h3>
+              <p class="text-xs text-[#BAAAAA] font-medium">
+                851 ккал б 59,3 ж 45,9 у 50,2
+              </p>
+            </div>
+            <div class="grid grid-cols-3 gap-[10px] max-md:grid-cols-1">
+              <div
+                class="flex flex-col border border-[#FFF6F699] py-[30px] px-5 rounded-[24px]"
+              >
+                <img
+                  src="./imgs/footitem.png"
+                  alt=""
+                  class="w-[100px] h-[100px] mx-auto"
+                />
+                <h3 class="mt-6 mb-2 text-xl font-medium text-left">Перекус</h3>
+                <p class="text-xs font-medium text-left">
+                  Салат из свеклы с сыром
+                </p>
+              </div>
+              <div
+                class="flex flex-col border border-[#FFF6F699] py-[30px] px-5 rounded-[24px]"
+              >
+                <img
+                  src="./imgs/footitem.png"
+                  alt=""
+                  class="w-[100px] h-[100px] mx-auto"
+                />
+                <h3 class="mt-6 mb-2 text-xl font-medium text-left">Перекус</h3>
+                <p class="text-xs font-medium text-left">
+                  Салат из свеклы с сыром
+                </p>
+              </div>
+              <div
+                class="flex flex-col border border-[#FFF6F699] py-[30px] px-5 rounded-[24px]"
+              >
+                <img
+                  src="./imgs/footitem.png"
+                  alt=""
+                  class="w-[100px] h-[100px] mx-auto"
+                />
+                <h3 class="mt-6 mb-2 text-xl font-medium text-left">Перекус</h3>
+                <p class="text-xs font-medium text-left">
+                  Салат из свеклы с сыром
+                </p>
+              </div>
+              <div
+                class="flex flex-col border border-[#FFF6F699] py-[30px] px-5 rounded-[24px]"
+              >
+                <img
+                  src="./imgs/footitem.png"
+                  alt=""
+                  class="w-[100px] h-[100px] mx-auto"
+                />
+                <h3 class="mt-6 mb-2 text-xl font-medium text-left">Перекус</h3>
+                <p class="text-xs font-medium text-left">
+                  Салат из свеклы с сыром
+                </p>
+              </div>
+              <div
+                class="flex flex-col border border-[#FFF6F699] py-[30px] px-5 rounded-[24px]"
+              >
+                <img
+                  src="./imgs/footitem.png"
+                  alt=""
+                  class="w-[100px] h-[100px] mx-auto"
+                />
+                <h3 class="mt-6 mb-2 text-xl font-medium text-left">Перекус</h3>
+                <p class="text-xs font-medium text-left">
+                  Салат из свеклы с сыром
+                </p>
+              </div>
+              <div
+                class="flex flex-col border border-[#FFF6F699] py-[30px] px-5 rounded-[24px]"
+              >
+                <img
+                  src="./imgs/footitem.png"
+                  alt=""
+                  class="w-[100px] h-[100px] mx-auto"
+                />
+                <h3 class="mt-6 mb-2 text-xl font-medium text-left">Перекус</h3>
+                <p class="text-xs font-medium text-left">
+                  Салат из свеклы с сыром
+                </p>
+              </div>
+            </div>
+            <button
+              class="text-white mt-[10px] bg-[#1D1D1D] py-3 rounded-[16px] cursor-pointer font-semibold w-full"
+            >
+              Добавить блюдо
+            </button>
+          </div>
+          <div
+            class="max-w-[380px] bg-[#FFF6F633] pt-10 pb-[60px] rounded-[16px] px-5"
+          >
+            <h2 class="mb-8 text-2xl font-medium">Форма заказа</h2>
+            <p class="mb-4 font-medium">Длительность</p>
+            <div class="flex justify-between mb-8 gap-1.5">
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-5 h-[42px] text-nowrap text-sm font-medium text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                2 дня
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-5 h-[42px] text-nowrap text-sm font-medium text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                6 дня
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-5 h-[42px] text-nowrap text-sm font-medium text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                14 дня
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-full py-3 px-5 h-[42px] text-nowrap text-sm font-medium text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                28 дня
+              </button>
+            </div>
+            <h3 class="mb-3 font-medium">Исключить ингредиенты</h3>
+            <p class="text-xs font-medium">
+              Выберите ингредиенты, которые будут исключены из рациона
+            </p>
+            <input
+              type="text"
+              placeholder="Орехи, нуга, молочка"
+              class="px-6 py-4 font-medium rounded-[16px] border border-[#FE554A] outline-none cursor-pointer w-full mt-4 mb-8"
+            />
+
+            <label class="relative flex flex-col mb-8">
+              <input type="checkbox" class="hidden peer" />
+              <div
+                class="absolute top-0 left-0 w-6 h-6 border border-[#C9C9C9] rounded-[8px] block peer-checked:hidden transition"
+              ></div>
+              <div
+                class="absolute top-0 left-0 w-6 h-6 flex items-center justify-center rounded-[8px] hidden peer-checked:flex peer-checked:bg-[#FE554A] peer-checked:border-[#FE554A] transition"
+              >
+                <img
+                  src="./imgs/icons/check.svg"
+                  alt=""
+                  class="peer-checked:hidden"
+                />
+              </div>
+
+              <p class="font-semibold ml-9">Нужны пластиковые приборы</p>
+            </label>
+            <div class="bg-[#C9C9C9] h-[1px]"></div>
+            <div class="flex justify-between mt-4 mb-8">
+              <p class="font-semibold">Стартовый</p>
+              <p class="font-semibold">230 000 ₫ в день</p>
+            </div>
+            <div class="flex justify-between mt-4 mb-6">
+              <p class="text-2xl font-semibold">Итого:</p>
+              <p class="text-2xl font-semibold">230 000 ₫</p>
+            </div>
+            <button
+              class="text-white bg-[#FE554A] py-3 rounded-[16px] cursor-pointer font-semibold w-full"
+            >
+              Заказать
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[30px]">
+        <h2 class="font-medium text-[36px] text-center max-w-[420px] mx-auto">
+          Попробуйте коробочки с едой в течение 2 дней
+        </h2>
+        <p
+          class="mb-8 font-medium text-center mt-6 max-w-[650px] leading-[17px] mx-auto"
+        >
+          Оставьте нам свой контакт, и мы позвоним вам в течение двух часов в
+          рабочее время и договоримся обо всем за 10 минут.
+        </p>
+        <div
+          class="flex mx-auto max-w-[900px] max-md:w-full max-md:flex-col max-md:items-center gap-10 mb-8"
+        >
+          <div
+            class="h-[100px] w-[100px] rounded-full bg-[#FFF6F666] flex flex-col justify-center items-center"
+          >
+            <h4 class="text-[32px] font-medium text-[#FE554A]">1</h4>
+            <p class="text-sm">день</p>
+          </div>
+          <div class="flex gap-10 my-5">
+            <img
+              src="./imgs/footitem.png"
+              class="h-[60px] w-[60px] rounded-full"
+              alt=""
+            />
+            <img
+              src="./imgs/footitem.png"
+              class="h-[60px] w-[60px] rounded-full"
+              alt=""
+            />
+            <img
+              src="./imgs/footitem.png"
+              class="h-[60px] w-[60px] rounded-full"
+              alt=""
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <h4 class="text-[36px] font-medium">+</h4>
+          </div>
+          <div class="flex gap-10 my-5">
+            <img
+              src="./imgs/footitem.png"
+              class="h-[60px] w-[60px] rounded-full"
+              alt=""
+            />
+            <img
+              src="./imgs/footitem.png"
+              class="h-[60px] w-[60px] rounded-full"
+              alt=""
+            />
+            <img
+              src="./imgs/footitem.png"
+              class="h-[60px] w-[60px] rounded-full"
+              alt=""
+            />
+          </div>
+          <div
+            class="h-[100px] w-[100px] rounded-full bg-[#FFF6F666] flex flex-col justify-center items-center"
+          >
+            <h4 class="text-[32px] font-medium text-[#FE554A]">2</h4>
+            <p class="text-sm">день</p>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="text-white bg-[#FE554A] py-3 rounded-[16px] cursor-pointer font-semibold px-6"
+          >
+            Поробовать
+          </button>
+        </div>
+      </section>
+
+      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+        <h2 class="font-medium text-[36px] text-center mb-[50px]">
+          Три причины выбрать PlateMate
+        </h2>
+        <div class="grid grid-cols-3 max-md:grid-cols-1 gap-[10px]">
+          <div
+            class="flex flex-col overflow-hidden pt-10 rounded-[24px] bg-[#FFF6F666]"
+          >
+            <h3 class="mb-6 text-2xl px-[30px] font-medium">
+              Готовое питание по цене продуктовой корзины
+            </h3>
+            <p
+              class="flex gap-1.5 font-medium mb-[10px] px-[30px] items-center"
+            >
+              <img src="./imgs/icons/checkblack.svg" alt="" /> Экономим ваше
+              время
+            </p>
+            <p
+              class="flex gap-1.5 font-medium mb-[10px] px-[30px] items-center"
+            >
+              <img src="./imgs/icons/checkblack.svg" alt="" /> Разнообразное
+              питание
+            </p>
+            <p
+              class="flex gap-1.5 font-medium mb-[10px] px-[30px] items-center grow-1"
+            >
+              <img src="./imgs/icons/checkblack.svg" alt="" /> Никакой грязной
+              посуды
+            </p>
+            <img src="./imgs/fooditem2.png" alt="" />
+          </div>
+          <div
+            class="flex flex-col overflow-hidden pt-10 rounded-[24px] bg-[#FFF6F666]"
+          >
+            <h3 class="mb-6 text-2xl px-[30px] font-medium">
+              Питаешься с PlateMate
+            </h3>
+            <p
+              class="flex gap-1.5 font-medium mb-[10px] px-[30px] items-center grow-1"
+            >
+              Все уже продумано, нужно только разогреть
+            </p>
+
+            <img src="./imgs/fooditem3.png" alt="" />
+          </div>
+          <div
+            class="flex flex-col overflow-hidden pt-10 rounded-[24px] bg-[#FFF6F666]"
+          >
+            <h3 class="mb-6 text-2xl px-[30px] font-medium grow-1">
+              Готовим в ночь отправки из самых свежих продуктов
+            </h3>
+
+            <img src="./imgs/fooditem3.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="max-w-[1160px] mx-auto max-md:px-4 py-[50px] bg-[#FFF6F633]"
+      >
+        <div class="flex flex-wrap">
+          <div class="w-1/2 max-md:w-full pt-10 px-[30px] pb-[50px]">
+            <h3 class="mb-6 text-2xl font-medium">Наборы</h3>
+            <div class="flex mb-8">
+              <button
+                class="border border-[#FE554A] rounded-l-full py-3 w-[130px] text-[16px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Стартовый
+              </button>
+              <button
+                class="border border-[#FE554A] py-3 w-[130px] text-[16px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Базовый+
+              </button>
+              <button
+                class="border border-[#FE554A] py-3 w-[130px] text-[16px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Комфорт
+              </button>
+              <button
+                class="border border-[#FE554A] rounded-r-full py-3 w-[130px] text-[16px] font-bold text-[#000] transition-all hover:text-white hover:bg-[#FE554A] cursor-pointer"
+              >
+                Премиум
+              </button>
+            </div>
+            <h4 class="mb-6 font-medium">Выберите формат</h4>
+            <div class="flex items-center justify-between mb-5">
+              <label class="relative flex flex-col">
+                <input type="checkbox" class="hidden peer" />
+                <div
+                  class="absolute top-0 left-0 w-6 h-6 border border-[#C9C9C9] rounded-[8px] block peer-checked:hidden transition"
+                ></div>
+                <div
+                  class="absolute top-0 left-0 w-6 h-6 flex items-center justify-center rounded-[8px] hidden peer-checked:flex peer-checked:bg-[#FE554A] peer-checked:border-[#FE554A] transition"
+                >
+                  <img
+                    src="./imgs/icons/check.svg"
+                    alt=""
+                    class="peer-checked:hidden"
+                  />
+                </div>
+
+                <p class="font-semibold ml-9">6 дней</p>
+              </label>
+              <p class="text-2xl font-medium">90 000 ₫</p>
+            </div>
+            <div class="flex items-center justify-between mb-5">
+              <label class="relative flex flex-col">
+                <input type="checkbox" class="hidden peer" />
+                <div
+                  class="absolute top-[50%] translate-y-[-50%] left-0 w-6 h-6 border border-[#C9C9C9] rounded-[8px] block peer-checked:hidden transition"
+                ></div>
+                <div
+                  class="absolute top-[50%] translate-y-[-50%] left-0 w-6 h-6 flex items-center justify-center rounded-[8px] hidden peer-checked:flex peer-checked:bg-[#FE554A] peer-checked:border-[#FE554A] transition"
+                >
+                  <img
+                    src="./imgs/icons/check.svg"
+                    alt=""
+                    class="peer-checked:hidden"
+                  />
+                </div>
+
+                <div class="flex flex-col ml-9">
+                  <p class="font-semibold">12 дней</p>
+                  <p class="text-xs font-medium">Выгода 25%</p>
+                </div>
+              </label>
+              <p class="text-2xl font-medium">120 000 ₫</p>
+            </div>
+            <div class="flex items-center justify-between mb-5">
+              <label class="relative flex flex-col">
+                <input type="checkbox" class="hidden peer" />
+                <div
+                  class="absolute top-[50%] translate-y-[-50%] left-0 w-6 h-6 border border-[#C9C9C9] rounded-[8px] block peer-checked:hidden transition"
+                ></div>
+                <div
+                  class="absolute top-[50%] translate-y-[-50%] left-0 w-6 h-6 flex items-center justify-center rounded-[8px] hidden peer-checked:flex peer-checked:bg-[#FE554A] peer-checked:border-[#FE554A] transition"
+                >
+                  <img
+                    src="./imgs/icons/check.svg"
+                    alt=""
+                    class="peer-checked:hidden"
+                  />
+                </div>
+
+                <div class="flex flex-col ml-9">
+                  <p class="font-semibold">24 дней</p>
+                  <p class="text-xs font-medium">Выгода 38%</p>
+                </div>
+              </label>
+              <p class="text-2xl font-medium">160 000 ₫</p>
+            </div>
+            <div class="flex items-center justify-between mb-5">
+              <label class="relative flex flex-col">
+                <input type="checkbox" class="hidden peer" />
+                <div
+                  class="absolute top-[50%] translate-y-[-50%] left-0 w-6 h-6 border border-[#C9C9C9] rounded-[8px] block peer-checked:hidden transition"
+                ></div>
+                <div
+                  class="absolute top-[50%] translate-y-[-50%] left-0 w-6 h-6 flex items-center justify-center rounded-[8px] hidden peer-checked:flex peer-checked:bg-[#FE554A] peer-checked:border-[#FE554A] transition"
+                >
+                  <img
+                    src="./imgs/icons/check.svg"
+                    alt=""
+                    class="peer-checked:hidden"
+                  />
+                </div>
+
+                <div class="flex flex-col ml-9">
+                  <p class="font-semibold">Семейная подписка</p>
+                  <p class="text-xs font-medium">10% на 2-ю подписку</p>
+                </div>
+              </label>
+              <p class="text-2xl font-medium">250 000 ₫</p>
+            </div>
+          </div>
+          <div class="w-1/2 max-md:w-full pt-10 px-[30px] pb-[50px]">
+            <div
+              class="bg-[#FFFFFF33] rounded-[20px] flex flex-col py-[30px] flex flex-col items-center mb-6"
+            >
+              <p class="mb-5 font-medium">12 блюд, 3 дня</p>
+              <h3 class="mb-5 text-2xl font-medium">230 000 ₫ в день</h3>
+              <p class="text-sm">120 000 ₫</p>
+            </div>
+            <h3 class="mb-4 font-medium">Удобный способ связи</h3>
+            <select
+              class="border border-[#FE554A] h-[52px] px-6 w-full rounded-[16px] outline-none mb-3"
+            >
+              <option value="tg">Telegram</option>
+              <option value="tg">Instagram</option>
+              <option value="tg">Facebook</option>
+            </select>
+            <p class="mb-6 text-xs font-medium">
+              для уточнения деталей заказа и доставки
+            </p>
+            <button
+              class="text-white bg-[#FE554A] py-3 flex justify-between rounded-[16px] cursor-pointer font-semibold px-6 w-full"
+            >
+              <p>Поробовать</p>
+              <p>230 000 ₫</p>
+            </button>
+            <p class="mt-3 text-xs font-medium">
+              предложение для новых клиентов
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+        <h2 class="text-[36px] text-center mb-6 font-medium">FAQ</h2>
+        <p class="mb-[50px] text-center font-medium">
+          Ответы на часто задаваемые вопросы
+        </p>
+        <div
+          class="grid grid-cols-4 gap-[10px] max-lg:grid-cols-2 max-md:grid-cols-1"
+        >
+          <div class="flex bg-[#FFF6F666] rounded-[24px] h-[126px]">
+            <img src="./imgs/otziv1.png" alt="" class="w-full h-[420px]" />
+          </div>
+          <div class="flex bg-[#FFF6F666] p-[10px] rounded-[24px]">
+            <img src="./imgs/otziv2.png" alt="" class="w-full h-[420px]" />
+          </div>
+          <div class="flex bg-[#FFF6F666] p-[10px] rounded-[24px]">
+            <img src="./imgs/otziv3.png" alt="" class="w-full h-[420px]" />
+          </div>
+          <div class="flex bg-[#FFF6F666] p-[10px] rounded-[24px]">
+            <img src="./imgs/otziv4.png" alt="" class="w-full h-[420px]" />
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+        <h2 class="text-[36px] text-center mb-6 font-medium">Отзывы</h2>
+        <p class="mb-[50px] text-center font-medium">
+          Посмотрите, что говорят наши клиенты
+        </p>
+        <div
+          class="grid grid-cols-4 gap-[10px] max-lg:grid-cols-2 max-md:grid-cols-1"
+        >
+          <div
+            class="flex items-center justify-center flex-col bg-[#FFF6F633] p-[10px] rounded-[24px] h-[126px] transition-all hover:bg-[#FFF6F666] border border-transparent hover:border-[#FE554A]"
+          >
+            <img src="./imgs/icons/faqIcon1.svg" alt="" class="" />
+            <p class="mt-3 text-xl font-medium">О еде</p>
+          </div>
+          <div
+            class="flex items-center justify-center flex-col bg-[#FFF6F633] p-[10px] rounded-[24px] h-[126px] transition-all hover:bg-[#FFF6F666] border border-transparent hover:border-[#FE554A]"
+          >
+            <img src="./imgs/icons/faqIcon2.svg" alt="" class="" />
+            <p class="mt-3 text-xl font-medium">Сервис</p>
+          </div>
+          <div
+            class="flex items-center justify-center flex-col bg-[#FFF6F633] p-[10px] rounded-[24px] h-[126px] transition-all hover:bg-[#FFF6F666] border border-transparent hover:border-[#FE554A]"
+          >
+            <img src="./imgs/icons/faqIcon3.svg" alt="" class="" />
+            <p class="mt-3 text-xl font-medium">Хранение</p>
+          </div>
+          <div
+            class="flex items-center justify-center flex-col bg-[#FFF6F633] p-[10px] rounded-[24px] h-[126px] transition-all hover:bg-[#FFF6F666] border border-transparent hover:border-[#FE554A]"
+          >
+            <img src="./imgs/icons/faqIcon4.svg" alt="" class="" />
+            <p class="mt-3 text-xl font-medium">Оплата и доставка</p>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <details
+            class="group mb-[10px] rounded-[24px] py-10 px-[20px] bg-[#FFF6F633] transition"
+          >
+            <summary
+              class="flex items-center justify-between text-xl font-medium cursor-pointer"
+            >
+              Производство точно безопасное?
+              <img
+                src="./imgs/icons/arrowicon.svg"
+                alt=""
+                class="transition group-open:rotate-180"
+              />
+            </summary>
+            <p class="mt-2 text-sm leading-[16px]">
+              Все блюда готовятся на современном производстве, сертифицированном
+              по международной системе ХАССП. Это более жесткие, чем ГОСТы,
+              требования. Первоначально они разрабатывались для производства
+              пищи для NASA. Все помещения и оборудование моют два раза в сутки,
+              дважды в неделю проводят очистку с полной остановкой процессов
+              производства.
+            </p>
+          </details>
+          <details
+            class="group mb-[10px] rounded-[24px] py-10 px-[20px] bg-[#FFF6F633] transition"
+          >
+            <summary
+              class="flex items-center justify-between text-xl font-medium cursor-pointer"
+            >
+              Производство точно безопасное?
+              <img
+                src="./imgs/icons/arrowicon.svg"
+                alt=""
+                class="transition group-open:rotate-180"
+              />
+            </summary>
+            <p class="mt-2 text-sm leading-[16px]">
+              Все блюда готовятся на современном производстве, сертифицированном
+              по международной системе ХАССП. Это более жесткие, чем ГОСТы,
+              требования. Первоначально они разрабатывались для производства
+              пищи для NASA. Все помещения и оборудование моют два раза в сутки,
+              дважды в неделю проводят очистку с полной остановкой процессов
+              производства.
+            </p>
+          </details>
+          <details
+            class="group mb-[10px] rounded-[24px] py-10 px-[20px] bg-[#FFF6F633] transition"
+          >
+            <summary
+              class="flex items-center justify-between text-xl font-medium cursor-pointer"
+            >
+              Производство точно безопасное?
+              <img
+                src="./imgs/icons/arrowicon.svg"
+                alt=""
+                class="transition group-open:rotate-180"
+              />
+            </summary>
+            <p class="mt-2 text-sm leading-[16px]">
+              Все блюда готовятся на современном производстве, сертифицированном
+              по международной системе ХАССП. Это более жесткие, чем ГОСТы,
+              требования. Первоначально они разрабатывались для производства
+              пищи для NASA. Все помещения и оборудование моют два раза в сутки,
+              дважды в неделю проводят очистку с полной остановкой процессов
+              производства.
+            </p>
+          </details>
+          <details
+            class="group mb-[10px] rounded-[24px] py-10 px-[20px] bg-[#FFF6F633] transition"
+          >
+            <summary
+              class="flex items-center justify-between text-xl font-medium cursor-pointer"
+            >
+              Производство точно безопасное?
+              <img
+                src="./imgs/icons/arrowicon.svg"
+                alt=""
+                class="transition group-open:rotate-180"
+              />
+            </summary>
+            <p class="mt-2 text-sm leading-[16px]">
+              Все блюда готовятся на современном производстве, сертифицированном
+              по международной системе ХАССП. Это более жесткие, чем ГОСТы,
+              требования. Первоначально они разрабатывались для производства
+              пищи для NASA. Все помещения и оборудование моют два раза в сутки,
+              дважды в неделю проводят очистку с полной остановкой процессов
+              производства.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+        <div class="flex flex-wrap">
+          <div class="w-1/2 p-10 max-md:w-full">
+            <h2 class="text-[32px] font-medium mb-8">Карта доставки</h2>
+            <div class="flex items-center gap-[10px] mb-5">
+              <div class="w-[10px] h-[10px] rounded-full bg-[#35BB7C]"></div>
+              <h3 class="text-2xl font-medium">Зеленая зона</h3>
+            </div>
+            <div class="flex items-center gap-[10px] mb-3">
+              <img src="./imgs/icons/checkblack.svg" alt="" class="w-4 h-4" />
+              <p class="font-medium">Бесплатная доставка</p>
+            </div>
+            <div class="flex items-center gap-[10px] mb-8">
+              <img src="./imgs/icons/checkblack.svg" alt="" class="w-4 h-4" />
+              <p class="font-medium">Включена в стоимость подписки</p>
+            </div>
+            <div class="flex items-center gap-[10px] mb-5">
+              <div class="w-[10px] h-[10px] rounded-full bg-[#FFCC00]"></div>
+              <h3 class="text-2xl font-medium">Жёлтая зона</h3>
+            </div>
+            <div class="flex items-center gap-[10px] mb-3">
+              <img src="./imgs/icons/checkblack.svg" alt="" class="w-4 h-4" />
+              <p class="font-medium">Доплата 50.000 ₫ за доставку</p>
+            </div>
+            <div class="flex items-center gap-[10px] mb-8">
+              <img src="./imgs/icons/checkblack.svg" alt="" class="w-4 h-4" />
+              <p class="font-medium">Оплачивается дополнительно</p>
+            </div>
+          </div>
+          <div class="w-1/2 py-10 max-md:w-full">
+            <img src="./imgs/map.png" class="w-full h-[350px]" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER CONTENT -->
+
+    <footer class="max-w-[1160px] mx-auto max-md:px-4 my-[30px]">
+      <div
+        class="flex flex-col items-start justify-between mx-auto md:flex-row"
+      >
+        <div class="text-left">
+          <img src="./imgs/icons/Logo.svg" alt="" class="mb-8" />
+          <p class="text-sm">© 2025. PlateMate.<br />Все права защищены.</p>
+        </div>
+
+        <div class="mt-6 md:mt-0">
+          <p class="font-semibold">Вьетнам, Да Нанг</p>
+          <p class="text-sm font-medium text-[#FE554A] md:mb-6">локация</p>
+          <p class="mt-2 font-semibold">@kantariamo</p>
+          <p class="text-sm font-medium text-[#FE554A]">телеграм</p>
+        </div>
+
+        <div class="mt-6 md:mt-0">
+          <p class="font-semibold md:mb-6">Клиентам</p>
+          <ul class="space-y-1 font-medium text-[#C9C9C9]">
+            <li><a href="#">Как заказать?</a></li>
+            <li><a href="#">Наборы</a></li>
+            <li><a href="#">Карта доставки</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="mt-6 md:mt-0">
+          <p class="font-semibold md:mb-6">Документы</p>
+          <ul class="space-y-1 font-medium text-[#C9C9C9]">
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li>
+              <a href="#">Соглашение в отношении обработки cookie-файлов</a>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

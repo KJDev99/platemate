@@ -10,6 +10,7 @@
     />
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="bg_body">
@@ -17,7 +18,7 @@
 
     <header>
       <div class="flex gap-[10px] justify-center py-1.5 items-center">
-        <img src="./imgs/icons/flagtop.svg" alt="" />
+        <img src="./imgs/icons/flag.png" alt="" />
         <p class="text-xs">Мы находимся во Вьетнаме, Да Нанг!</p>
       </div>
 
@@ -83,7 +84,9 @@
           >
             Месяц готовой еды
           </h1>
-          <span class="text-[32px] sm:text-[40px] md:text-[48px] font-semibold">
+          <span
+            class="text-[32px] sm:text-[40px] md:text-[48px] font-semibold mb-[-16px]"
+          >
             и бесплатная замена блюд
           </span>
           <p
@@ -115,7 +118,7 @@
 
     <!-- MAIN CONTENT -->
     <main>
-      <section class="max-w-[1160px] mx-auto max-md:px-4 mb-[50px]">
+      <section class="max-w-[1160px] mx-auto max-lg:px-4 mb-[50px]">
         <div class="grid grid-cols-1 md:grid-cols-3">
           <div class="flex flex-col items-center max-md:mb-6">
             <img
@@ -144,13 +147,14 @@
               class="mb-2 max-md:w-12"
             />
             <p class="font-bold text-[24px] max-md:text-[18px]">
-              от 230 000 <span class="font-medium">₫ в день</span>
+              <span class="font-medium">от</span> 230 000
+              <span class="font-medium">₫ в день</span>
             </p>
           </div>
         </div>
       </section>
 
-      <section id="order" class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+      <section id="order" class="max-w-[1160px] mx-auto max-lg:px-4 my-[50px]">
         <h2
           class="mb-[50px] text-center text-[36px] max-md:text-[28px] font-medium"
         >
@@ -158,7 +162,7 @@
         </h2>
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
           <div
-            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] backdrop-blur-[24px] h-max"
+            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] transition-all hover:bg-[#FFF6F666] backdrop-blur-[24px] h-max"
           >
             <img
               src="./imgs/icons/sectwo-1.svg"
@@ -176,7 +180,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] backdrop-blur-[24px] h-max"
+            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] transition-all hover:bg-[#FFF6F666] backdrop-blur-[24px] h-max"
           >
             <img
               src="./imgs/icons/sectwo-2.svg"
@@ -194,7 +198,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] backdrop-blur-[24px] h-max"
+            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] transition-all hover:bg-[#FFF6F666] backdrop-blur-[24px] h-max"
           >
             <img
               src="./imgs/icons/sectwo-3.svg"
@@ -213,7 +217,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] backdrop-blur-[24px] h-max"
+            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] transition-all hover:bg-[#FFF6F666] backdrop-blur-[24px] h-max"
           >
             <img
               src="./imgs/icons/sectwo-4.svg"
@@ -230,7 +234,7 @@
               Еда приходит сразу на два дня, останется её только разогреть.
             </p>
             <button
-              class="mt-6 max-md:mt-4 rounded-[16px] bg-[#FE554A] text-[#FFFFFF] font-semibold py-3 px-5 max-md:py-2 max-md:px-4"
+              class="mt-6 max-md:mt-4 rounded-[16px] bg-[#FE554A] transition-all hover:scale-[1.03] text-[#FFFFFF] font-semibold py-3 px-5 max-md:py-2 max-md:px-4"
             >
               <a href="#make">Сделать заказ</a>
             </button>
@@ -238,17 +242,19 @@
         </div>
       </section>
 
-      <section id="sets" class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+      <section id="sets" class="max-w-[1160px] mx-auto max-lg:px-4 my-[50px]">
         <h2 class="text-center text-[36px] font-medium">Наборы</h2>
         <p class="mb-[50px] text-center">
           Выберите один из наборов, чтобы продолжить
         </p>
 
-        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div
+          class="flex lg:grid lg:grid-cols-4 gap-4 max-lg:overflow-x-auto max-lg:whitespace-nowrap max-lg:pb-4"
+        >
           <label
-            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px]"
+            class="group relative flex flex-col pt-10 pb-0 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px] shrink-0 max-lg:w-[320px]"
           >
-            <input type="radio" name="set" class="hidden peer" />
+            <input type="radio" name="set" class="hidden peer" checked />
             <div
               class="absolute top-10 right-[30px] w-8 h-8 border border-[#C9C9C9] rounded-[10px] block peer-checked:hidden transition"
             ></div>
@@ -264,21 +270,19 @@
 
             <h3 class="text-2xl font-semibold mx-[30px]">Стартовый</h3>
             <p class="my-3 text-sm font-bold mx-[30px]">3 блюда</p>
-            <p class="text-sm leading-[14px] mx-[30px]">
+            <p class="text-sm leading-[14px] mx-[30px] text-wrap">
               Идеально для классического режима питания
             </p>
             <p class="!text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
               от 460.000 đ
             </p>
-            <img
-              src="./imgs/food1.png"
-              alt="Стартовый"
-              class="mt-4 rounded-lg"
-            />
+            <div class="grow flex items-end">
+              <img src="./imgs/food1.png" alt="Базовый+" class="rounded-lg" />
+            </div>
           </label>
 
           <label
-            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px]"
+            class="group relative flex flex-col pt-10 pb-0 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px] shrink-0 max-lg:w-[320px]"
           >
             <input type="radio" name="set" class="hidden peer" />
             <div
@@ -295,21 +299,19 @@
             </div>
             <h3 class="text-xl font-semibold mx-[30px]">Базовый+</h3>
             <p class="my-3 text-sm font-bold mx-[30px]">3 блюда + напиток</p>
-            <p class="text-sm leading-[14px] mx-[30px]">
+            <p class="text-sm leading-[14px] mx-[30px] text-wrap">
               Дополнительное преимущество освежающего напитка
             </p>
             <p class="!text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
               от 490.000 đ
             </p>
-            <img
-              src="./imgs/food1.png"
-              alt="Базовый+"
-              class="mt-4 rounded-lg"
-            />
+            <div class="grow flex items-end">
+              <img src="./imgs/food1.png" alt="Базовый+" class="rounded-lg" />
+            </div>
           </label>
 
           <label
-            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px]"
+            class="group relative flex flex-col pt-10 pb-0 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px] shrink-0 max-lg:w-[320px]"
           >
             <input type="radio" name="set" class="hidden peer" />
             <div
@@ -326,17 +328,19 @@
             </div>
             <h3 class="text-xl font-semibold mx-[30px]">Комфорт</h3>
             <p class="my-3 text-sm font-bold mx-[30px]">4 блюда + напиток</p>
-            <p class="text-sm leading-[14px] mx-[30px]">
+            <p class="text-sm leading-[14px] mx-[30px] text-wrap">
               Оптимально для активного образа жизни
             </p>
             <p class="!text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
               от 575.000 đ
             </p>
-            <img src="./imgs/food3.png" alt="Комфорт" class="mt-4 rounded-lg" />
+            <div class="grow flex items-end">
+              <img src="./imgs/food3.png" alt="Базовый+" class="rounded-lg" />
+            </div>
           </label>
 
           <label
-            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px]"
+            class="group relative flex flex-col pt-10 pb-0 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px] shrink-0 max-lg:w-[320px]"
           >
             <input type="radio" name="set" class="hidden peer" />
             <div
@@ -357,12 +361,14 @@
             <p class="!text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
               от 660.000 đ
             </p>
-            <img src="./imgs/food4.png" alt="Премиум" class="mt-4 rounded-lg" />
+            <div class="grow flex items-end">
+              <img src="./imgs/food4.png" alt="Базовый+" class="rounded-lg" />
+            </div>
           </label>
         </div>
       </section>
 
-      <section id="make" class="max-w-[1160px] mx-auto max-md:px-4 my-[30px]">
+      <section id="make" class="max-w-[1160px] mx-auto max-lg:px-4 my-[30px]">
         <div class="flex flex-wrap justify-between">
           <div class="max-w-[760px] max-md:w-full">
             <h2 class="mb-6 text-2xl font-medium">Пример меню</h2>
@@ -569,7 +575,7 @@
         </div>
       </section>
 
-      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[30px]">
+      <section class="max-w-[1160px] mx-auto max-lg:px-4 my-[30px]">
         <h2 class="font-medium text-[36px] text-center max-w-[420px] mx-auto">
           Попробуйте коробочки с едой в течение 2 дней
         </h2>
@@ -641,7 +647,7 @@
         </div>
       </section>
 
-      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+      <section class="max-w-[1160px] mx-auto max-lg:px-4 my-[50px]">
         <h2 class="font-medium text-[36px] text-center mb-[50px]">
           Три причины выбрать PlateMate
         </h2>
@@ -699,7 +705,7 @@
       </section>
 
       <section
-        class="max-w-[1160px] mx-auto max-md:px-4 py-[50px] bg-[#FFF6F633]"
+        class="max-w-[1160px] mx-auto max-lg:px-4 py-[50px] bg-[#FFF6F633]"
       >
         <div class="flex flex-wrap">
           <div class="w-1/2 max-md:w-full pt-10 px-[30px] pb-[50px]">
@@ -849,7 +855,7 @@
         </div>
       </section>
 
-      <section id="faq" class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+      <section id="faq" class="max-w-[1160px] mx-auto max-lg:px-4 my-[50px]">
         <h2 class="text-[36px] text-center mb-6 font-medium">FAQ</h2>
         <p class="mb-[50px] text-center font-medium">
           Ответы на часто задаваемые вопросы
@@ -872,7 +878,7 @@
         </div>
       </section>
 
-      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+      <section class="max-w-[1160px] mx-auto max-lg:px-4 my-[50px]">
         <h2 class="text-[36px] text-center mb-6 font-medium">Отзывы</h2>
         <p class="mb-[50px] text-center font-medium">
           Посмотрите, что говорят наши клиенты
@@ -998,7 +1004,7 @@
         </div>
       </section>
 
-      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+      <section class="max-w-[1160px] mx-auto max-lg:px-4 my-[50px]">
         <div class="flex flex-wrap">
           <div class="w-1/2 p-10 max-md:w-full">
             <h2 class="text-[32px] font-medium mb-8">Карта доставки</h2>
@@ -1036,7 +1042,7 @@
 
     <!-- FOOTER CONTENT -->
 
-    <footer class="max-w-[1160px] mx-auto max-md:px-4 my-[30px]">
+    <footer class="max-w-[1160px] mx-auto max-lg:px-4 my-[30px]">
       <div
         class="flex flex-col items-start justify-between mx-auto md:flex-row"
       >

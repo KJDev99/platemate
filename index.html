@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlateMale</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="bg-[#FFEAE9]">
+  <body class="bg_body">
     <!-- HEADER -->
 
     <header>
@@ -18,35 +24,51 @@
       <!-- NAVBAR -->
 
       <nav
-        class="max-w-[1160px] mx-auto flex justify-between items-center max-md:px-4 my-4"
+        class="max-w-[1160px] mx-auto flex justify-between items-center max-md:px-4 my-4 max-md:flex-col"
       >
         <ul
-          class="flex flex-col space-y-2 font-medium md:flex-row md:space-y-0 md:space-x-6"
+          class="flex space-y-2 font-medium md:flex-row md:space-y-0 md:space-x-6"
         >
-          <li class="border-b-2 border-[#FE554A] py-2 text-sm">
-            <a href="#" class="mx-2">Как заказать?</a>
+          <li
+            class="border-b-2 border-transparent hover:border-[#FE554A] transition-all py-2 text-sm"
+          >
+            <a href="#order" class="mx-2">Как заказать?</a>
           </li>
-          <li class="py-2 text-sm"><a href="#" class="mx-2">Наборы</a></li>
-          <li class="py-2 text-sm"><a href="#" class="mx-2">Карта</a></li>
-          <li class="py-2 text-sm"><a href="#" class="mx-2">FAQ</a></li>
+          <li
+            class="border-b-2 border-transparent hover:border-[#FE554A] transition-all py-2 text-sm"
+          >
+            <a href="#sets" class="mx-2">Наборы</a>
+          </li>
+          <li
+            class="border-b-2 border-transparent hover:border-[#FE554A] transition-all py-2 text-sm"
+          >
+            <a href="#map" class="mx-2">Карта</a>
+          </li>
+          <li
+            class="border-b-2 border-transparent hover:border-[#FE554A] transition-all py-2 text-sm"
+          >
+            <a href="#faq" class="mx-2">FAQ</a>
+          </li>
         </ul>
 
-        <div class="flex items-center text-xl font-bold">
+        <div class="flex items-center text-xl font-bold max-md:order-[-1]">
           <img src="./imgs/icons/Logo.svg" alt="Logo" />
         </div>
 
         <div
-          class="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-6"
+          class="flex items-center space-y-0 md:flex-row md:space-y-0 md:space-x-6 max-md:space-x-4"
         >
           <select name="" id="" class="font-medium border-none outline-none">
             <option value="ru">Русский</option>
             <option value="en">English</option>
           </select>
-          <button class="flex gap-1.5 font-medium">
-            <img src="./imgs/icons/Telegram.svg" alt="" />
+          <button class="md:flex md:gap-1.5 font-medium">
+            <img src="./imgs/icons/Telegram.svg" alt="" class="max-md:hidden" />
             <span>Поддержка</span>
           </button>
-          <button class="text-[#1D1D1D] font-semibold">Сделать заказ</button>
+          <button class="text-[#1D1D1D] font-semibold">
+            <a href="#make">Сделать заказ</a>
+          </button>
         </div>
       </nav>
 
@@ -57,7 +79,7 @@
       >
         <div class="flex flex-col text-center lg:w-3/5 lg:text-left">
           <h1
-            class="text-[32px] sm:text-[40px] md:text-[48px] font-bold lg:mt-[100px] mb-[-16px]"
+            class="text-[32px] sm:text-[40px] md:text-[48px] font-bold lg:mt-[100px] mb-[-16px] max-md:mt-10"
           >
             Месяц готовой еды
           </h1>
@@ -74,7 +96,7 @@
             донг
           </p>
           <button
-            class="text-semibold py-3 sm:py-4 px-6 sm:px-8 bg-[#FE554A] rounded-[12px] sm:rounded-[16px] text-white w-max mx-auto lg:mx-0 cursor-pointer lg:mb-[100px]"
+            class="text-semibold py-3 sm:py-4 px-6 sm:px-8 bg-[#FE554A] rounded-[12px] sm:rounded-[16px] !text-white w-max mx-auto lg:mx-0 cursor-pointer lg:mb-[100px]"
           >
             Заказать еду на месяц
           </button>
@@ -95,100 +117,128 @@
     <main>
       <section class="max-w-[1160px] mx-auto max-md:px-4 mb-[50px]">
         <div class="grid grid-cols-1 md:grid-cols-3">
-          <div class="flex flex-col items-center">
-            <img src="./imgs/icons/secone-1.svg" alt="" class="mb-4" />
-            <p class="font-bold text-[24px]">
+          <div class="flex flex-col items-center max-md:mb-6">
+            <img
+              src="./imgs/icons/secone-1.svg"
+              alt=""
+              class="mb-2 max-md:w-12"
+            />
+            <p class="font-bold text-[24px] max-md:text-[18px]">
               Бесплатная замена <span class="font-medium">блюд</span>
             </p>
           </div>
-          <div class="flex flex-col items-center">
-            <img src="./imgs/icons/secone-2.svg" alt="" class="mb-4" />
-            <p class="font-bold text-[24px]">
+          <div class="flex flex-col items-center max-md:mb-6">
+            <img
+              src="./imgs/icons/secone-2.svg"
+              alt=""
+              class="mb-2 max-md:w-12"
+            />
+            <p class="font-bold text-[24px] max-md:text-[18px]">
               140 блюд <span class="font-medium">в меню</span>
             </p>
           </div>
-          <div class="flex flex-col items-center">
-            <img src="./imgs/icons/secone-3.svg" alt="" class="mb-4" />
-            <p class="font-bold text-[24px]">
+          <div class="flex flex-col items-center max-md:mb-6">
+            <img
+              src="./imgs/icons/secone-3.svg"
+              alt=""
+              class="mb-2 max-md:w-12"
+            />
+            <p class="font-bold text-[24px] max-md:text-[18px]">
               от 230 000 <span class="font-medium">₫ в день</span>
             </p>
           </div>
         </div>
       </section>
 
-      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
-        <h2 class="mb-[50px] text-center text-[36px] font-medium">
+      <section id="order" class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+        <h2
+          class="mb-[50px] text-center text-[36px] max-md:text-[28px] font-medium"
+        >
           Как заказать?
         </h2>
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
           <div
-            class="flex flex-col items-center px-[30px] py-10 bg-[#FFF6F633] rounded-[24px]"
+            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] backdrop-blur-[24px] h-max"
           >
             <img
               src="./imgs/icons/sectwo-1.svg"
               alt=""
-              class="w-[52px] h-[52px]"
+              class="w-[52px] h-[52px] max-md:w-10 max-md:h-10"
             />
-            <h4 class="text-[36px] mt-6 font-medium">01</h4>
-            <h4 class="text-xl mb-6 mt-[52px] font-medium">Создайте заказ</h4>
-            <p class="font-medium text-center leading-[17px]">
+            <h4 class="text-[36px] max-md:text-[24px] mt-6 font-medium">01</h4>
+            <h4
+              class="text-xl max-md:text-lg mb-6 mt-[52px] max-md:mt-6 font-medium"
+            >
+              Создайте заказ
+            </h4>
+            <p class="font-medium text-center leading-[17px] max-md:text-sm">
               Выберите удобный набор и количество дней
             </p>
           </div>
           <div
-            class="flex flex-col items-center px-[30px] py-10 bg-[#FFF6F633] rounded-[24px]"
+            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] backdrop-blur-[24px] h-max"
           >
             <img
               src="./imgs/icons/sectwo-2.svg"
               alt=""
-              class="w-[52px] h-[52px]"
+              class="w-[52px] h-[52px] max-md:w-10 max-md:h-10"
             />
-            <h4 class="text-[36px] mt-6 font-medium">02</h4>
-            <h4 class="text-xl mb-6 mt-[52px] font-medium">Оставьте заявку</h4>
-            <p class="font-medium text-center leading-[17px]">
+            <h4 class="text-[36px] max-md:text-[24px] mt-6 font-medium">02</h4>
+            <h4
+              class="text-xl max-md:text-lg mb-6 mt-[52px] max-md:mt-6 font-medium"
+            >
+              Оставьте заявку
+            </h4>
+            <p class="font-medium text-center leading-[17px] max-md:text-sm">
               Выберите удобный способ связи с вами
             </p>
           </div>
           <div
-            class="flex flex-col items-center px-[30px] py-10 bg-[#FFF6F633] rounded-[24px]"
+            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] backdrop-blur-[24px] h-max"
           >
             <img
               src="./imgs/icons/sectwo-3.svg"
               alt=""
-              class="w-[52px] h-[52px]"
+              class="w-[52px] h-[52px] max-md:w-10 max-md:h-10"
             />
-            <h4 class="text-[36px] mt-6 font-medium">03</h4>
-            <h4 class="text-xl mb-6 mt-[52px] font-medium">
+            <h4 class="text-[36px] max-md:text-[24px] mt-6 font-medium">03</h4>
+            <h4
+              class="text-xl max-md:text-lg mb-6 mt-[52px] max-md:mt-6 font-medium"
+            >
               Подтвердите заказ
             </h4>
-            <p class="font-medium text-center leading-[17px]">
+            <p class="font-medium text-center leading-[17px] max-md:text-sm">
               Мы с вами свяжемся чтобы определить дату доставки, оплату и
               временной диапазон для доставки
             </p>
           </div>
           <div
-            class="flex flex-col items-center px-[30px] py-10 bg-[#FFF6F633] rounded-[24px]"
+            class="flex flex-col items-center px-[30px] py-10 max-md:px-4 max-md:py-6 bg-[#FFF6F633] rounded-[24px] backdrop-blur-[24px] h-max"
           >
             <img
               src="./imgs/icons/sectwo-4.svg"
               alt=""
-              class="w-[52px] h-[52px]"
+              class="w-[52px] h-[52px] max-md:w-10 max-md:h-10"
             />
-            <h4 class="text-[36px] mt-6 font-medium">04</h4>
-            <h4 class="text-xl mb-6 mt-[52px] font-medium">Наслаждайтесь❤️</h4>
-            <p class="font-medium text-center leading-[17px]">
+            <h4 class="text-[36px] max-md:text-[24px] mt-6 font-medium">04</h4>
+            <h4
+              class="text-xl max-md:text-lg mb-6 mt-[52px] max-md:mt-6 font-medium"
+            >
+              Наслаждайтесь❤️
+            </h4>
+            <p class="font-medium text-center leading-[17px] max-md:text-sm">
               Еда приходит сразу на два дня, останется её только разогреть.
             </p>
             <button
-              class="mt-6 rounded-[16px] bg-[#FE554A] text-[#FFFFFF] font-semibold py-3 px-5"
+              class="mt-6 max-md:mt-4 rounded-[16px] bg-[#FE554A] text-[#FFFFFF] font-semibold py-3 px-5 max-md:py-2 max-md:px-4"
             >
-              Сделать заказ
+              <a href="#make">Сделать заказ</a>
             </button>
           </div>
         </div>
       </section>
 
-      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+      <section id="sets" class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
         <h2 class="text-center text-[36px] font-medium">Наборы</h2>
         <p class="mb-[50px] text-center">
           Выберите один из наборов, чтобы продолжить
@@ -196,7 +246,7 @@
 
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <label
-            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition"
+            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px]"
           >
             <input type="radio" name="set" class="hidden peer" />
             <div
@@ -212,12 +262,12 @@
               />
             </div>
 
-            <h3 class="text-2xl font-semibold">Стартовый</h3>
+            <h3 class="text-2xl font-semibold mx-[30px]">Стартовый</h3>
             <p class="my-3 text-sm font-bold mx-[30px]">3 блюда</p>
             <p class="text-sm leading-[14px] mx-[30px]">
               Идеально для классического режима питания
             </p>
-            <p class="text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
+            <p class="!text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
               от 460.000 đ
             </p>
             <img
@@ -228,7 +278,7 @@
           </label>
 
           <label
-            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition"
+            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px]"
           >
             <input type="radio" name="set" class="hidden peer" />
             <div
@@ -248,7 +298,7 @@
             <p class="text-sm leading-[14px] mx-[30px]">
               Дополнительное преимущество освежающего напитка
             </p>
-            <p class="text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
+            <p class="!text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
               от 490.000 đ
             </p>
             <img
@@ -259,7 +309,7 @@
           </label>
 
           <label
-            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition"
+            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px]"
           >
             <input type="radio" name="set" class="hidden peer" />
             <div
@@ -279,14 +329,14 @@
             <p class="text-sm leading-[14px] mx-[30px]">
               Оптимально для активного образа жизни
             </p>
-            <p class="text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
+            <p class="!text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
               от 575.000 đ
             </p>
             <img src="./imgs/food3.png" alt="Комфорт" class="mt-4 rounded-lg" />
           </label>
 
           <label
-            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition"
+            class="group relative flex flex-col pt-10 pb-3 bg-[#FFF6F633] rounded-[24px] cursor-pointer border-4 border-transparent hover:border-[#FE554A] transition backdrop-blur-[24px]"
           >
             <input type="radio" name="set" class="hidden peer" />
             <div
@@ -304,7 +354,7 @@
             <h3 class="text-xl font-semibold mx-[30px]">Премиум</h3>
             <p class="my-3 text-sm font-bold mx-[30px]">5 блюд + напиток</p>
             <p class="text-sm leading-[14px] mx-[30px]">Больше вкусных блюд</p>
-            <p class="text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
+            <p class="!text-[#FE554A] font-semibold mt-6 text-2xl mx-[30px]">
               от 660.000 đ
             </p>
             <img src="./imgs/food4.png" alt="Премиум" class="mt-4 rounded-lg" />
@@ -312,7 +362,7 @@
         </div>
       </section>
 
-      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[30px]">
+      <section id="make" class="max-w-[1160px] mx-auto max-md:px-4 my-[30px]">
         <div class="flex flex-wrap justify-between">
           <div class="max-w-[760px] max-md:w-full">
             <h2 class="mb-6 text-2xl font-medium">Пример меню</h2>
@@ -535,7 +585,7 @@
           <div
             class="h-[100px] w-[100px] rounded-full bg-[#FFF6F666] flex flex-col justify-center items-center"
           >
-            <h4 class="text-[32px] font-medium text-[#FE554A]">1</h4>
+            <h4 class="text-[32px] font-medium !text-[#FE554A]">1</h4>
             <p class="text-sm">день</p>
           </div>
           <div class="flex gap-10 my-5">
@@ -578,7 +628,7 @@
           <div
             class="h-[100px] w-[100px] rounded-full bg-[#FFF6F666] flex flex-col justify-center items-center"
           >
-            <h4 class="text-[32px] font-medium text-[#FE554A]">2</h4>
+            <h4 class="text-[32px] font-medium !text-[#FE554A]">2</h4>
             <p class="text-sm">день</p>
           </div>
         </div>
@@ -799,7 +849,7 @@
         </div>
       </section>
 
-      <section class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
+      <section id="faq" class="max-w-[1160px] mx-auto max-md:px-4 my-[50px]">
         <h2 class="text-[36px] text-center mb-6 font-medium">FAQ</h2>
         <p class="mb-[50px] text-center font-medium">
           Ответы на часто задаваемые вопросы
@@ -997,9 +1047,9 @@
 
         <div class="mt-6 md:mt-0">
           <p class="font-semibold">Вьетнам, Да Нанг</p>
-          <p class="text-sm font-medium text-[#FE554A] md:mb-6">локация</p>
+          <p class="text-sm font-medium !text-[#FE554A] md:mb-6">локация</p>
           <p class="mt-2 font-semibold">@kantariamo</p>
-          <p class="text-sm font-medium text-[#FE554A]">телеграм</p>
+          <p class="text-sm font-medium !text-[#FE554A]">телеграм</p>
         </div>
 
         <div class="mt-6 md:mt-0">

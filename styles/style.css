@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -12,4 +17,12 @@ li {
 
 .peer:not(:checked) + div img {
   display: none;
+}
+
+.bg_body {
+  background: #ffeae9 url("../imgs/icons/mainlinear.svg") center/cover no-repeat;
+}
+
+button {
+  cursor: pointer;
 }
